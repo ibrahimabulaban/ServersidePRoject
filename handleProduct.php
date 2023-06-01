@@ -35,8 +35,8 @@ if ($stmt->execute()) {
 
 // start Delete
 }
-if (isset($_POST['DeleteID'])) {
-    $id = $_POST['DeleteID'];
+if (isset($_REQUEST['ac'])) {
+    $id = $_REQUEST['row_id'];
     $query = "DELETE FROM products WHERE id = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("i", $id);

@@ -61,10 +61,7 @@
                                         <th colspan="2">
                                          <div style="display: inline-flex;">
                                             <a href="#" class="edit-Category">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                                            <form id="DelteForm" action="handleCategory.php" method="post">
-                                                <input type="hidden" name="DeleteID" value="$row[0]">
-                                                <button type="submit" class="text-danger" style="border:none;background:none;padding: 0px;" form="DelteForm">Delete</button>
-                                            </form>
+                                            <a href="handleCategory.php?row_id=$row[0]&ac=delete" class="text-danger">Delete</a>
                                         </div>    
                                         </th>
                                     </tr>
